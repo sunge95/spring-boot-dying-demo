@@ -2,7 +2,6 @@ package com.dying.bean;
 
 import lombok.Data;
 
-
 /**
  * 数据接收类
  */

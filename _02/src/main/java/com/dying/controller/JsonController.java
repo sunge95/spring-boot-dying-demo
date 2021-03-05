@@ -1,7 +1,9 @@
 package com.dying.controller;
 
 import com.dying.bean.Food;
+import com.dying.bean.Vegetables;
 import com.dying.config.FoodConfig;
+import com.dying.config.VegetablesConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,6 +30,7 @@ public class JsonController {
     // 2
     /**
      * @Value 通过${}结构获得配置文件中属性值
+     * 当使用@Value时，指定位置配置文件必须有赋值
      * */
     @Value("${food.rice}")
     private String rice;
@@ -53,5 +56,16 @@ public class JsonController {
         food.setRice(foodConfig.getRice());
         food.setMeat(foodConfig.getMeat());
         return food;
+    }
+
+    @Autowired
+    private VegetablesConfig vegetablesConfig;
+    @RequestMapping("/Vegetables")
+    public Vegetables vegetables(){
+        Vegetables vegetables = new Vegetables();
+        vegetables.setPotato(vegetablesConfig.getPotato());
+        vegetables.setEggplant(vegetablesConfig.getEggplant());
+        vegetables.setGreenpeper(vegetablesConfig.getGreenpeper());
+        return vegetables;
     }
 }
