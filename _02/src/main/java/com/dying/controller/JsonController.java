@@ -41,6 +41,7 @@ public class JsonController {
     public Food json2(){
         Food food = new Food();
         food.setMeat(meat);
+        //取不到配置文件中的值
         food.setRice(food.getRice());
         return food;
         // 响应结果 {"rice":null,"meat":"烤肉-499001342","sauce":null}
@@ -55,6 +56,7 @@ public class JsonController {
         Food food = new Food();
         food.setRice(foodConfig.getRice());
         food.setMeat(foodConfig.getMeat());
+        food.setSauce(foodConfig.getSauce());
         return food;
     }
 
@@ -67,5 +69,20 @@ public class JsonController {
         vegetables.setEggplant(vegetablesConfig.getEggplant());
         vegetables.setGreenpeper(vegetablesConfig.getGreenpeper());
         return vegetables;
+    }
+
+    //加密
+    @Value("${info.username}")
+    private String username;
+    @Value("${info.password}")
+    private String password;
+
+    @RequestMapping("/jasypt")
+    public String jasypt(){
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append(username);
+        stringBuffer.append("\t");
+        stringBuffer.append(password);
+        return stringBuffer.toString();
     }
 }

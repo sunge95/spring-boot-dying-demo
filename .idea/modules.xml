@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/03/03（thymeleaf）.iml" filepath="$PROJECT_DIR$/03/03（thymeleaf）.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04/04（curd）.iml" filepath="$PROJECT_DIR$/04/04（curd）.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_01/_01（jia you）.iml" filepath="$PROJECT_DIR$/_01/_01（jia you）.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_02/_02.iml" filepath="$PROJECT_DIR$/_02/_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-boot-dying-demo.iml" filepath="$PROJECT_DIR$/.idea/spring-boot-dying-demo.iml" />
+    </modules>
+  </component>
+</project>

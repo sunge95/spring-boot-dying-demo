@@ -1,0 +1,13 @@
+server:
+  port: 8090
+
+# freemarker模板配置 （可以配置，也可以不配置）
+spring:
+  mvc:
+    view:
+      #文件位置 不能修改
+      prefix: classpath:/templates/
+      #文件后缀
+      suffix: .ftl
+
+#debug: true

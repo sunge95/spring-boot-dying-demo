@@ -1,0 +1,45 @@
+#server:
+#  port: 8085
+
+# 建议使用
+food:
+  rice: 红米饭
+  meat: 红烧肉
+  sauce:
+    - 咖喱
+    - 蜜汁
+    - 原为
+
+#流式布局方式
+#food: {rice: 大米饭,meat: 鸡胸肉}
+
+#使用jasypt加密 encrytor:加密器
+jasypt:
+  encrytor:
+    password: 123456!@#
+#ENC() 解密
+info:
+  username: ENC(I6Wkuu+eP75DJyw4gKBnIA==)
+  password: ENC(gq8DuFugPIB14kD/cG2jSg==)
+
+spring:
+  profiles:
+    active: dev
+
+# --- 表示文档的开头
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 8087
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+server:
+  port: 8088
+
