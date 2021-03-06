@@ -34,7 +34,7 @@ public class GuestController {
         return "/add";
     }
 
-    @RequestMapping(value = "/add")
+    @RequestMapping("/add")
     public String add(Guest guest){
         guestService.add(guest);
         return "redirect:/guest/list";

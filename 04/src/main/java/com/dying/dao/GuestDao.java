@@ -16,6 +16,7 @@ import java.util.List;
 public class GuestDao {
 
     static List<Guest> guestList = new ArrayList<>();
+
     static {
         guestList.add(new Guest("黄晓明","店长"));
         guestList.add(new Guest("秦海璐","财务"));
@@ -40,20 +41,15 @@ public class GuestDao {
         for (Guest g:guestList){
             if (name.equals(g.getName())){
                 return g;
-            } else {
-                return null;
             }
         }
         return null;
     }
 
-    public void update(Guest guest) {
-        String name = guest.getName();
-        Guest g = findGuestByName(name);
-        if (g != null){
-            guestList.remove(g);
-            guestList.add(guest);
-        }
+    public void update(Guest newGuest) {
+        String name = newGuest.getName();
+        Guest oldGuest = findGuestByName(name);
+        oldGuest.setRole(newGuest.getRole());
     }
 
     public void delete(String name) {
