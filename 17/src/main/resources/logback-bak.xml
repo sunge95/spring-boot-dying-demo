@@ -1,0 +1,29 @@
+
+<!--  当使用这个配置文件时，application.properties中的 日志配置将会失效-->
+<configuration>
+　　　<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <!--  打印test.log 日志文件 -->
+         <!-- 日志将不会打印到控制台，而会打印到日志文件 -->
+    　　　　　　<file>test.log</file>
+
+            <!-- 滚动式处理 -->
+　　　　　　<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy"> 
+　　　　　　　　　　<fileNamePattern>tests.%i.log.zip</fileNamePattern> 
+　　　　　　　　　　<minIndex>1</minIndex> 
+　　　　　　　　　　<maxIndex>3</maxIndex> 
+　　　　　　</rollingPolicy> 
+
+　　　　　　<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"> 
+　　　　　　　　　　<maxFileSize>5MB</maxFileSize> 
+　　　　　　</triggeringPolicy>
+            <!-- 日志格式 -->
+　　　　　　<encoder> 
+　　　　　　　　　<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern> 
+　　　　　　</encoder> 
+　　　</appender> 
+
+　　　<root level="DEBUG">
+            <!-- ref关联到上面的 name="FILE" -->
+　　　　　　<appender-ref ref="FILE" /> 
+　　　</root> 
+</configuration>

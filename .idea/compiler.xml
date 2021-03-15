@@ -7,25 +7,79 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="_02" />
-        <module name="_01（jia you）" />
-        <module name="03（thymeleaf）" />
+        <module name="web-container" />
+        <module name="05（restful）" />
+        <module name="10 (more_datasource)" />
+        <module name="06（orm_jpa）" />
+        <module name="11(event-listener)" />
+        <module name="09（orm_mybatisPlus)" />
+        <module name="21(cache)" />
+        <module name="20(actuator)" />
+        <module name="07（orm_mybatis)" />
         <module name="04（curd）" />
+        <module name="_01（jia you）" />
+        <module name="08（orm_tk_mybatis）" />
+        <module name="14（war）" />
+        <module name="06(jpa)" />
+        <module name="03（thymeleaf）" />
+        <module name="17（logging）" />
+        <module name="18(swagger)" />
+        <module name="13(webflux)" />
+        <module name="15(servlet)" />
+        <module name="16（error-except）" />
+        <module name="05(restful)" />
+        <module name="_02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="03（thymeleaf）" target="1.8" />
       <module name="04（curd）" target="1.8" />
+      <module name="05(restful)" target="1.8" />
+      <module name="05（restful）" target="1.8" />
+      <module name="06(jpa)" target="1.8" />
+      <module name="06（orm_jpa）" target="1.8" />
+      <module name="07（orm_mybatis)" target="1.8" />
+      <module name="08（orm_tk_mybatis）" target="1.8" />
+      <module name="09（orm_mybatisPlus)" target="1.8" />
+      <module name="10 (more_datasource)" target="1.8" />
+      <module name="11(event-listener)" target="1.8" />
+      <module name="13(webflux)" target="1.8" />
+      <module name="14（war）" target="1.8" />
+      <module name="15(servlet)" target="1.8" />
+      <module name="16（error-except）" target="1.8" />
+      <module name="17（logging）" target="1.8" />
+      <module name="18(swagger)" target="1.8" />
+      <module name="20(actuator)" target="1.8" />
+      <module name="21(cache)" target="1.8" />
       <module name="_01（jia you）" target="1.8" />
       <module name="_02" target="1.8" />
+      <module name="web-container" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="03（thymeleaf）" options="-parameters" />
       <module name="04（curd）" options="-parameters" />
+      <module name="05(restful)" options="-parameters" />
+      <module name="05（restful）" options="-parameters" />
+      <module name="06(jpa)" options="-parameters" />
+      <module name="06（orm_jpa）" options="-parameters" />
+      <module name="07（orm_mybatis)" options="-parameters" />
+      <module name="08（orm_tk_mybatis）" options="-parameters" />
+      <module name="09（orm_mybatisPlus)" options="-parameters" />
+      <module name="10 (more_datasource)" options="-parameters" />
+      <module name="11(event-listener)" options="-parameters" />
+      <module name="13(webflux)" options="-parameters" />
+      <module name="14（war）" options="-parameters" />
+      <module name="15(servlet)" options="-parameters" />
+      <module name="16（error-except）" options="-parameters" />
+      <module name="17（logging）" options="-parameters" />
+      <module name="18(swagger)" options="-parameters" />
+      <module name="20(actuator)" options="-parameters" />
+      <module name="21(cache)" options="-parameters" />
       <module name="_01（jia you）" options="-parameters" />
       <module name="_02" options="-parameters" />
+      <module name="web-container" options="-parameters" />
     </option>
   </component>
 </project>

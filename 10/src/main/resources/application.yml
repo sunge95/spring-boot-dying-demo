@@ -1,0 +1,14 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    # 单个数据源可以用 url springboot自动识别数据源 多数据源 用jdbc-url
+    db1:
+      jdbc-url: jdbc:mysql://localhost:3306/springboot_study?serverTimezone=CST
+      username: root
+      password: 123456
+    db2:
+      jdbc-url: jdbc:mysql://localhost:3306/springboot_study2?serverTimezone=CST
+      username: root
+      password: 123456
